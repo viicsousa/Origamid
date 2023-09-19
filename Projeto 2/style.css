@@ -17,11 +17,15 @@ body {
   padding: 2.6rem;
 }
 
-li {
-  list-style: none;
+a {
   font-weight: 600;
   background: #fff;
   padding: 1rem 1.4rem;
+  cursor: pointer;
+  border: 2px solid #fff;
+}
+a:hover {
+  border-color: red;
 }
 
 .cards {
@@ -41,6 +45,9 @@ li {
   background: #fff;
   padding: 3rem;
 }
+.card:nth-child(3) {
+  background-image: url("./img/onda.svg");
+}
 
 h1 {
   font-weight: 600;
@@ -56,6 +63,11 @@ button {
   font-weight: 600;
   padding: 1rem 2rem;
   border-radius: 4px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #900;
 }
 
 .card:nth-child(3) {
@@ -78,6 +90,12 @@ button {
   align-items: center;
   padding: 10px;
   gap: 0 20px;
+}
+.detalhes:nth-child(odd) {
+  background: #f7f7f7;
+}
+.detalhes:hover {
+  border-left: 3px solid red;
 }
 
 .txtdetalhes {
